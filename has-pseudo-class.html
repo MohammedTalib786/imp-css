@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Checks inside of its children  */
+        .name {
+            margin: 20px;
+            border: 2px solid red;
+        }
+
+        .name:has(h1) {
+            background-color: antiquewhite;
+        }
+
+        .data-time>input {
+            margin: 10px;
+        }
+
+        .data-time:has([data-id="123"]) {
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="name">
+        <h1>Hello World</h1>
+        <p id="actual"> My name is Talib </p>
+    </div>
+
+    <div class="name">
+        <p id="actual"> My name is Talib </p>
+    </div>
+
+    <div class="name">
+        <button>Add it</button>
+    </div>
+
+    <div class="data-time">
+        <label for="hello">Hello</label><input type="text" data-id="123" ><br>
+        <label for="world">World</label><input type="text"><br>
+    </div>
+
+    <div class="data-time">
+        <label for="hello">Hello</label><input type="text" ><br>
+        <label for="world">World</label><input type="text" ><br>
+    </div>
+
+
+
+</body>
+
+</html>

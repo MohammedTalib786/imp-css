@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 16px;
+            --prim-color: magenta;
+            --sec-color: cyan;
+            --tri-color: yellow;
+
+        }
+
+
+        .cont {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: var(--sec-color);. */
+            flex-direction: column;
+        }
+
+
+        .inp {
+            width: 20%;
+            height: 1.98rem;
+            border: 0;
+            outline: 0;
+            padding-left: 1rem;
+            border-bottom: 1.8px solid var(--prim-color);
+            /* border-radius: 30px; */
+        }
+
+        .inp:invalid {
+            border: 1.5px solid red;
+        }
+
+        .inp:focus {
+            border-bottom: 1.8px solid var(--sec-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cont">
+        <label>Name</label>
+        <input type="text" id="name" class="inp">
+
+        <label>Email</label>
+        <input type="email" id="mail" class="inp">
+
+        <label>Password</label>
+        <input type="password" id="pass" class="inp" step="0-9">
+
+
+
+
+    </div>
+
+</body>
+
+</html>

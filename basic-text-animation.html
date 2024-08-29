@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #animate {
+            font-size: 26px;
+            font-family: sans-serif;
+            font-weight: 500;
+            /* background-color: aqua; */
+        }
+
+        #animate::before {
+            content: '';
+            height: 80px;
+            /* background-color: pink; */
+            background-color: white;
+            position: absolute;
+            display: block;
+            transform: translate(0px, -30px) rotate(2deg);
+            animation: 2s fadeIn 0s linear;
+            filter: blur(12px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                width: 450px;
+            }
+
+            to {
+                width: 0;
+                transform: translate(350px, 0px) rotate(0deg);
+            }
+        }
+
+        /* ------------------------------------------ */
+
+
+
+        #do-animate {
+            font-size: 26px;
+            font-family: sans-serif;
+            font-weight: 500;
+            /* background-color: aqua; */
+            overflow: hidden;
+            white-space: nowrap;
+            animation: 2s fadeAt 0s linear;
+        }
+
+        @keyframes fadeAt {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="animate">The Animation Can be Simple</h3>
+
+    <br><br>
+
+
+    <h3 id="do-animate">The Animation Can be Simple</h3>
+
+    <br><br>
+
+</body>
+
+</html>

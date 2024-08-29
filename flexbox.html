@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        :root {
+            font-size: 16px;
+            --prim-color: red;
+            --sec-color: blue;
+            --tri-color: magenta;
+            --for-color: cyan;
+        }
+
+        .parent {
+            width: 100%;
+            height: 50vh;
+            background-color: var(--for-color);
+            display: flex;
+            align-items: center;
+            /* in default the flex direction is row but we can change it to column for our convinience */
+        }
+
+        #red {
+            flex: 1;
+            height: 10vh;
+            background-color: var(--prim-color);
+        }
+
+        #blue {
+            flex: 3;
+            height: 10vh;
+            background-color: var(--sec-color);
+        }
+
+        #magenta {
+            flex: .5;
+            height: 10vh;
+            background-color: var(--tri-color);
+        }
+
+
+
+        .cont {
+            width: 100%;
+            height: 50vh;
+            background-color: green;
+
+        }
+
+        .cont {
+            width: 100%;
+            height: 50vh;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .div {
+            width: 10%;
+            height: 10vh;
+            margin: 1.5rem;
+            background-color: pink;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <div id="red"> flex properties</div>
+        <div id="blue"></div>
+        <div id="magenta"></div>
+    </div>
+
+    <div class="cont">
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+    </div>
+
+</body>
+
+</html>

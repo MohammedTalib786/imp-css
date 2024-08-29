@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    /* .cont h1,
+    .cont h2 {
+        color: brown;
+    } */
+
+    /* >>>>>>>>>>>> but is doesn't supports pseudo elemenst eg ::before and ::after */
+
+    .cont :is(h1, h2) {
+        color: brown;
+    }
+
+    /* .get h1,
+    .set h1,
+    .put h1,
+    .del h1 {
+        color: aqua;
+    } */
+
+    :is(.get, .set, .put, .del) h1 {
+        color: aqua;
+    }
+</style>
+
+<body>
+    <div class="cont">
+        <h1>Hello</h1>
+        <h2>World</h2>
+        <span>How Are You?</span>
+    </div>
+
+    <br>
+    <hr><br><br><br>
+    <hr><br>
+
+    <div class="get">
+        <h1>Get</h1>
+    </div>
+    <hr>
+    <div class="set">
+        <h1>Set</h1>
+        <span>set</span>
+    </div>
+    <hr>
+
+    <div class="put">
+        <h1>Put</h1>
+        <span>Put</span>
+    </div>
+    <hr>
+
+    <div class="del">
+        <h1>Delete</h1>
+        <span>Delete</span>
+    </div>
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Space</title>
+    <style>
+        p.a {
+            white-space: nowrap;
+        }
+
+        p.b {
+            white-space: normal;
+        }
+
+        p.c {
+            white-space: pre;
+        }
+
+        #do-animate {
+            font-size: 26px;
+            font-family: sans-serif;
+            font-weight: 500;
+            /* background-color: aqua; */
+            overflow: hidden;
+            white-space: nowrap;
+            animation: 2s fadeAt 0s linear;
+        }
+
+        @keyframes fadeAt {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The white-space Property</h1>
+
+    <h2>white-space: nowrap:</h2>
+    <p class="a">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+
+    <h2>white-space: normal:</h2>
+    <p class="b">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+
+    <h2>white-space: pre:</h2>
+    <p class="c">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+    <br><br>
+    <p> can be useful in making some animation Example:</p>
+    <p><b>Example:</b></p>
+    <br><br>
+
+    <h3 id="do-animate">The Animation Can be Simple</h3>
+
+    <br><br>
+
+</body>
+
+</html>

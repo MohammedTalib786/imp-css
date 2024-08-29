@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0;
+    padding: 0; */
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 16px;
+            --prim-color: red;
+            --sec-color: blue;
+            --tri-color: magenta;
+            --for-color: cyan;
+        }
+
+        .cont {
+            display: grid;
+            grid-template-areas:
+                'nav nav nav nav nav'
+                'section section section aside aside'
+                'sect sect sect aside aside'
+                'footer footer footer footer footer'
+            ;
+            grid-gap: .6rem;
+
+        }
+
+        .itm {
+            background: yellow;
+            border: 2px solid black;
+        }
+
+        nav {
+            grid-area: nav;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+
+        aside {
+            grid-area: aside;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .sect {
+            grid-area: sect;
+
+        }
+
+        footer {
+            grid-area: footer;
+            padding: 20px 0px;
+            text-align: center;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+            body {
+                background-color: blue;
+            }
+
+            .cont {
+                grid-template-areas:
+                    'nav nav nav nav nav'
+                    'section section section aside aside'
+                    'sect sect sect aside aside'
+                    'footer footer footer footer footer'
+                ;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            body {
+                background-color: red;
+            }
+
+            .cont {
+                grid-template-areas:
+                    'nav nav nav nav nav'
+                    'section section section aside aside'
+                    'sect sect sect sect sect'
+                    'footer footer footer footer footer'
+                ;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 766px) {
+            body {
+                background-color: cyan;
+            }
+
+            .cont {
+                grid-template-areas:
+                    'nav nav nav nav nav'
+                    'section section section section section'
+                    'sect sect sect sect sect'
+                    'aside aside aside aside aside'
+                    'footer footer footer footer footer'
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>hello</h1> -->
+
+    <div class="cont">
+
+        <nav class="itm">Home | About | Blog | Contact </nav>
+
+        <section class="itm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quaerat asperiores sapiente,
+            soluta repellat odio aperiam ullam illo quibusdam molestiae velit animi ratione reiciendis reprehenderit,
+            corrupti adipisci ducimus necessitatibus qui quisquam repudiandae, doloribus nemo enim quia ea? Unde illum
+            totam accusamus harum dolorum, rem voluptatum? Blanditiis sequi nemo molestias sit qui odit ad odio ducimus
+            fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed maiores, natus eos debitis sequi
+            blanditiis asperiores fugiat, eius incidunt iure quia inventore? Doloremque nam eaque veritatis consequatur
+            incidunt odit accusantium officia totam natus! Illum, incidunt non illo sequi expedita numquam est optio
+            culpa debitis veniam ratione voluptate autem odio doloribus. Illo ad quaerat nam? Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Sunt quas in id expedita. Cum quidem voluptatibus itaque obcaecati
+            repudiandae sunt, deleniti magnam asperiores voluptate sint eveniet ut quia expedita neque officia
+            laudantium? Quasi ipsa quod aperiam laudantium quisquam! Beatae delectus nisi architecto ipsa tempore qui
+            fuga modi aut quibusdam sunt consectetur, repellendus aliquid dolorum ea ab? Qui iusto molestias amet
+            mollitia expedita? Eligendi, non earum dolor exercitationem, molestiae odio facere placeat porro, nostrum
+            ipsam temporibus ad id consequatur numquam. Quasi officiis nostrum officia deleniti. Provident sit, quam
+            cupiditate porro libero voluptas, adipisci optio cumque quasi architecto soluta. Maxime amet ex corporis
+            iste velit vero, nostrum aliquid dolores possimus excepturi, totam neque cupiditate.</section>
+
+        <aside class="itm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum alias veniam quidem iste ab,
+            non minus perspiciatis. Voluptates saepe voluptatem, incidunt explicabo temporibus officiis? Ad incidunt
+            dignissimos dicta eum magni assumenda ducimus possimus voluptate ex. Ullam quaerat alias placeat.</aside>
+
+        <section class="sect itm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet mollitia
+            ipsum, quae quisquam veritatis minima dolore illum, voluptatibus dignissimos quo tenetur? Nesciunt, esse!
+            Error esse vero corporis doloribus assumenda porro ipsam vitae ab obcaecati aperiam aut, ex tenetur illum in
+            libero fugit molestiae itaque officia sed? Enim deleniti, cumque consequatur minus sequi ea ad quisquam
+            officia pariatur repudiandae illo mollitia maiores itaque necessitatibus. Quibusdam, amet autem.</section>
+
+        <footer class="itm">&copy; Copyright 2023</footer>
+    </div>
+
+</body>
+
+</html>

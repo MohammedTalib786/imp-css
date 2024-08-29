@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0;
+    padding: 0; */
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 16px;
+            --pri-clr: red;
+            --sec-clr: blue;
+            --ter-clr: green;
+        }
+
+
+        .cont {
+            display: grid;
+            grid-gap: .6rem;
+            grid-template-areas:
+                'A A A'
+                'B B E'
+                'C D E'
+            ;
+
+        }
+
+        .item {
+            background-color: yellow;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: open sans;
+            font-size: 4rem;
+            font-weight: 400;
+        }
+
+        .A {
+            grid-area: A;
+            height: 31.5vh;
+        }
+
+        .B {
+            grid-area: B;
+            height: 31.5vh;
+        }
+
+        .C {
+            grid-area: C;
+            height: 31.5vh;
+        }
+
+        .D {
+            grid-area: D;
+            height: 31.5vh;
+        }
+
+        .E {
+            grid-area: E;
+        }
+
+
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: red;
+            }
+
+            .cont {
+                grid-template-areas:
+                    'A A A A'
+                    'B B B B'
+                    'C C D D'
+                    'E E E E'
+                ;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cont">
+        <div class="item A">A</div>
+        <div class="item B">B</div>
+        <div class="item C">C</div>
+        <div class="item D">D</div>
+        <div class="item E">E</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 16px;
+            font-family: sans-serif;
+            --prim-clr: red;
+            --sec-clr: green;
+            --grey-clr: grey;
+        }
+
+        .name {
+            width: 100%;
+            height: 4rem;
+            background-color: var(--grey-clr);
+            margin-bottom: 4rem;
+        }
+
+        .name h1 {
+            /* font-size: clamp(3rem, 40vw, 1rem); */
+        }
+
+
+        .grid {
+            width: 100%;
+            height: 20rem;
+            background-color: yellow;
+            display: grid;
+            place-items: center;
+            gap: 1.5rem;
+
+        }
+
+        .grid div {
+            width: clamp(500px, 30%, 200px);
+            height: 5rem;
+            background-color: var(--sec-clr);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="name">
+        <h1>Hello There My Name is Shaikh Mohammed Talib</h1>
+    </div>
+    <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>

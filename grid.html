@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0;
+    padding: 0; */
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 16px;
+            --prim-color: red;
+            --sec-color: blue;
+            --tri-color: magenta;
+            --for-color: cyan;
+        }
+
+        .cont {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            margin-bottom: 4rem;
+
+        }
+
+        .itm {
+            background-color: yellow;
+            border: 2px solid black;
+        }
+
+        .itm1 {
+            grid-column: 1 / span 4;
+        }
+
+
+        .cont2 {
+            display: grid;
+            grid-gap: .5rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 30px 30px 30px 30px 30px;
+            margin-bottom: 4rem;
+        }
+
+        .chld {
+            border: 2px solid black;
+            background-color: pink;
+        }
+
+        .head {
+            grid-column: 1 / span 4;
+        }
+
+
+        .chld5 {
+            grid-column: 1 / span 3;
+        }
+
+        .foot {
+            grid-column: 1 / span 4;
+        }
+
+        .cont3 {
+            display: grid;
+            grid-gap: .5rem;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            /* minmax px and fr can be adjusted as per need we set it to 600 now because we need 3 cols but in 300 px it gives us 4 - 5 cols so, adjust the unit as per the need */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .atm {
+            border: 2px solid black;
+            background: magenta;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cont">
+        <div class="itm itm1">Item 1</div>
+        <div class="itm itm2">Item 2</div>
+        <div class="itm itm3">Item 3</div>
+        <div class="itm">Item 4</div>
+        <div class="itm">Item 5</div>
+        <div class="itm">Item 6</div>
+        <div class="itm">Item 7</div>
+        <div class="itm">Item 8</div>
+    </div>
+
+    <div class="cont2">
+        <div class="chld head">Header</div>
+        <div class="chld chld1">Child 1</div>
+        <div class="chld chld2">Child 2</div>
+        <div class="chld chld3">Child 3</div>
+        <div class="chld chld4">Child 4</div>
+        <div class="chld chld5">Child 5</div>
+        <div class="chld chld6">Child 6</div>
+        <div class="chld chld7">Child 7</div>
+        <div class="chld chld8">Child 8</div>
+        <div class="chld chld9">Child 9</div>
+        <div class="chld chld10">Child 10</div>
+        <div class="chld foot">Footer</div>
+    </div>
+
+    <div style="margin-bottom: 3rem; font-size: 18px; text-align: center;">Responsive</div>
+
+
+    <div class="cont3">
+        <div class="atm atm1">Item 1</div>
+        <div class="atm atm2">Item 2</div>
+        <div class="atm atm3">Item 3</div>
+        <div class="atm atm4">Item 4</div>
+        <div class="atm atm5">Item 5</div>
+        <div class="atm atm6">Item 6</div>
+        <div class="atm atm7">Item 7</div>
+        <div class="atm atm8">Item 8</div>
+        <div class="atm atm9">Item 9</div>
+        <div class="atm atm10">Item 10</div>
+        <div class="atm atm11">Item 11</div>
+        <div class="atm atm12">Item 12</div>
+    </div>
+
+</body>
+
+</html>
